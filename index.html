@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="web de maria — marimentita.">
+  <title>maria — marimentita</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <main class="profile-shell">
+    <a class="search-pill" href="https://www.instagram.com/marimentita/" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-search search-icon" aria-hidden="true"></i>
+      <span>made by @<span class="creator-link">marimentita</span></span>
+      <span class="search-actions" aria-hidden="true"><i class="bi bi-x-lg"></i><span class="search-divider"></span><i class="bi bi-mic-fill"></i></span>
+    </a>
+
+    <section class="image-strip" aria-label="Mis espacios">
+      <a class="image-tile" href="https://www.youtube.com/@marimentita" target="_blank" rel="noopener noreferrer">
+        <img src="img/microfono.svg">
+      </a>
+      <a class="image-tile" href="https://utdrcastellano.es/" target="_blank" rel="noopener noreferrer">
+        <img src="img/tobyfox.svg">
+      </a>
+      <a class="image-tile" href="https://soundcloud.com/marimentita" target="_blank" rel="noopener noreferrer">
+        <img src="img/guitarra.svg">
+      </a>
+    </section>
+
+    <header class="profile-heading">
+      <h1>maria</h1>
+      <p>marimentita</p>
+    </header>
+
+    <nav class="profile-tabs">
+      <button class="tab-button" type="button" data-tab="yo" aria-selected="true">yo</button>
+      <button class="tab-button" type="button" data-tab="aficiones" aria-selected="false">aficiones</button>
+      <button class="tab-button" type="button" data-tab="social" aria-selected="false">social</button>
+    </nav>
+
+    <section class="tab-content-area" aria-live="polite">
+      <div class="tab-panel active" id="panel-yo">
+        <p>seguramente me conozcas como maria, o <b>marimentita</b> en muchos perfiles... y si no es así, ¡hola! te aviso que soy alérgica a las mayúsculas :) <br> <br> 
+          
+          uso los pronombres ella/suya, mi idioma principal es español (y un poco de inglés o chino); mi personalidad es <a class="text-link strong-link" href="https://www.16personalities.com/es/personalidad-esfj" target="_blank" rel="noopener noreferrer">esfj</a>, soy tauro, me representa la <a class="text-link purple-link" href="https://undertale.jadenthejaded.uk/" target="_blank" rel="noopener noreferrer">perseverancia</a> ^^ ♡
+        
+          <br><br>
+          soy muy activa en <b>redes sociales</b>; si necesitas contactar conmigo, no dudes en hacerlo por discord, telegram o instagram
+        </p>
+      </div>
+
+      <div class="tab-panel" id="panel-aficiones" hidden>
+        <p>soy una chica a la que le gusta cantar, dibujar, leer, bailar y escuchar música; también me dedico al diseño de interfaces en aplicaciones multiplataforma :) y sí, estoy muy interesada en todo tipo de contenido relacionado con <a class="text-link" href="https://twitter.com/tobyfox" target="_blank" rel="noopener noreferrer">toby fox</a>, como <a class="text-link strong-link" href="https://undertale.com/" target="_blank" rel="noopener noreferrer">undertale</a> y <a class="text-link strong-link" href="https://deltarune.com/" target="_blank" rel="noopener noreferrer">deltarune</a>...</p>
+        <br> <p>me conocerás principalmente por mis interpretaciones y canciones, además de mis diseños o dibujos, incluso cosplay, que suelo crear en mi tiempo libre; <b>¡agradecería tu apoyo en mi cuenta de ko-fi!</b></p>
+      </div>
+
+      <div class="tab-panel" id="panel-social" hidden>
+        <div class="social-grid">
+          <a class="social-item" href="https://www.instagram.com/marimentita/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+          <a class="social-item" href="https://www.instagram.com/marimentitart" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+          <a class="social-item" href="https://www.instagram.com/cosmentita/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+          <button class="social-item" type="button" data-bs-toggle="modal" data-bs-target="#discordModal"><i class="bi bi-discord"></i></button>
+          <a class="social-item" href="https://www.youtube.com/@marimentita" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+          <a class="social-item" href="https://soundcloud.com/marimentita" target="_blank" rel="noopener noreferrer"><i class="bi bi-soundwave"></i></a>
+          <a class="social-item" href="https://mistbook.app/u/marimentita" data-placeholder="libro"><i class="bi bi-book"></i></a>
+          <a class="social-item" href="https://www.duolingo.com/profile/marimentita" target="_blank" rel="noopener noreferrer"><i class="bi bi-translate"></i></a>
+          <a class="social-item" href="https://www.tiktok.com/@marimentita" data-placeholder="tiktok"><i class="bi bi-tiktok"></i></a>
+          <a class="social-item" href="https://ko-fi.com/marimentita" data-placeholder="ko-fi"><i class="bi bi-heart-fill"></i></a>
+          <a class="social-item" href="https://letterboxd.com/marimentita/" data-placeholder="letterboxd"><i class="bi bi-camera-reels"></i></a>
+          <a class="social-item" href="https://www.serializd.com/user/marimentita" data-placeholder="serialized"><i class="bi bi-tv"></i></a>
+          <a class="social-item" href="https://open.spotify.com/user/312v2rob7qmr6kay3fb2tnbda3ce" data-placeholder="spotify"><i class="bi bi-spotify"></i></a>
+          <a class="social-item" href="www.linkedin.com/in/masdlave" data-placeholder="linkedIn"><i class="bi bi-linkedin"></i></a>
+          <a class="social-item" href="https://t.me/marimentita" data-placeholder="telegram"><i class="bi bi-telegram"></i></a>
+          <a class="social-item" href="https://es.pinterest.com/marimentita" data-placeholder="pinterest"><i class="bi bi-pinterest"></i></a>
+          <a class="social-item" href="https://es.wallapop.com/user/marias-458939472" data-placeholder="wallapop"><i class="bi bi-bag-heart"></i></a>
+          <a class="social-item" href="https://github.com/marimentita" data-placeholder="github"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade" id="discordModal" tabindex="-1" aria-labelledby="discordModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content discord-modal">
+        <div class="modal-header border-0 pb-0">
+          <h2 class="modal-title fs-6" id="discordModalLabel"><strong>discord</strong></h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body pt-2">usuario: @marimentita</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

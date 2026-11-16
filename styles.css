@@ -1,0 +1,119 @@
+* { box-sizing: border-box; }
+:root {
+  --ink: #111111;
+  --muted: #b9b9b9;
+  --pill: #e2e2e2;
+  --purple: #8b55c7;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #fff;
+  color: var(--ink);
+  font-family: "Nunito", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.profile-shell {
+  width: min(590px, calc(100% - 38px));
+  margin: 78px auto 70px;
+}
+.search-pill {
+  height: 52px;
+  width: min(566px, calc(100% - 26px));
+  margin: 0 auto 55px;
+  padding: 0 17px;
+  border-radius: 32px;
+  background: #dedede;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  color: #111;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 600;
+  transition: background .25s ease, transform .25s ease;
+}
+.search-pill:hover { background: #d5d5d5; transform: translateY(-1px); color: #111; }
+.search-icon { font-size: 23px; }
+.creator-link { text-decoration: underline; text-underline-offset: 3px; }
+.search-actions { margin-left: auto; display: flex; align-items: center; gap: 15px; font-size: 19px; }
+.search-divider { width: 1px; height: 25px; background: #555; display: inline-block; }
+.image-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 19px;
+  margin: 0 6px 25px;
+}
+.image-tile {
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 13px;
+  background: #e9e9e9;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.image-tile:hover { transform: translateY(-4px); box-shadow: 0 10px 24px #00000018; }
+.image-tile img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.profile-heading { margin: 0 12px 22px; }
+.profile-heading h1 { font-size: 32px; line-height: 1.15; font-weight: 800; margin: 0; letter-spacing: -.5px; }
+.profile-heading p { color: #bcbcbc; font-size: 27px; line-height: 1.2; letter-spacing: 2px; margin: 1px 0 0; font-weight: 500; }
+.profile-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin: 0 0 27px; }
+.tab-button {
+  border: 0;
+  height: 40px;
+  border-radius: 30px;
+  background: #dedede;
+  color: #171717;
+  font: inherit;
+  font-size: 21px;
+  line-height: 1;
+  transition: background .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+.tab-button:hover { background: #d4d4d4; }
+.tab-button[aria-selected="true"] { background: #dedede; box-shadow: inset 0 0 0 2px #bcbcbc; }
+.tab-button:active { transform: scale(.98); }
+.tab-content-area { min-height: 145px; padding: 0 7px; }
+.tab-panel { animation: appear .32s ease both; }
+.tab-panel p { font-size: 19px; line-height: 1.48; letter-spacing: .15px; margin: 0; font-weight: 500; }
+.text-link { color: inherit; text-decoration: none; transition: color .2s ease; }
+.text-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.strong-link { font-weight: 800; }
+.purple-link { color: var(--purple); font-weight: 800; }
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 15px;
+  padding: 1px 0 10px;
+}
+.social-item {
+  border: 0;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 15px;
+  background: #e7e7e7;
+  color: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 28px;
+  transition: transform .22s ease, background .22s ease, color .22s ease;
+}
+.social-item:hover { transform: translateY(-3px); background: #d7d7d7; color: #111; }
+.discord-modal { border: 0; border-radius: 18px; font-family: inherit; box-shadow: 0 15px 50px #0002; }
+.discord-modal .modal-body { font-size: 16px; }
+@keyframes appear { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 600px) {
+  .profile-shell { margin-top: 42px; width: min(590px, calc(100% - 30px)); }
+  .search-pill { margin-bottom: 38px; height: 48px; font-size: 17px; gap: 12px; }
+  .search-actions { gap: 10px; }
+  .image-strip { gap: 12px; margin-bottom: 22px; }
+  .image-tile { border-radius: 10px; }
+  .profile-heading h1 { font-size: 29px; }
+  .profile-heading p { font-size: 23px; }
+  .profile-tabs { gap: 12px; margin-bottom: 23px; }
+  .tab-button { height: 38px; font-size: 18px; }
+  .tab-panel p { font-size: 17px; line-height: 1.5; }
+  .social-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 11px; }
+  .social-item { font-size: 25px; border-radius: 12px; }
+}
